@@ -1,0 +1,44 @@
+*
+{
+    font-size:16px;
+    font-family: Helvetica, Arial, sans-serif;
+     -webkit-text-size-adjust: 100%;
+}
+div
+{
+    width:100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space:pre-wrap;
+}
+div *
+{
+    width:100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+     white-space:pre-wrap;
+}
+
+.quotemain{
+    background: #FAFCFE;
+    border: 1px dotted #000;
+    border-left: 4px solid #8394B2;
+    border-top: 1px dotted #000;
+    color: purple;
+    padding: 4px;
+    margin: auto auto auto auto;
+}
+
+pre code {
+    display: block;
+    border: 2px outset;
+    background: #FEFFE8;
+}
+
+.keyword {
+    color: #00f;
+}
+
+.aggregate {
+    color: #f0f;
+}

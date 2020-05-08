@@ -1,0 +1,6 @@
+module Pods_mySqlExApp2 {
+  umbrella header "Pods-mySqlExApp2-umbrella.h"
+
+  export *
+  module * { export * }
+}
