@@ -18,7 +18,8 @@ enum Language : String
 func changeLanguage (lang:Language,completionHandler: @escaping () -> ())
 {
     let url="https://www.sql-ex.ru/index.php?Lang=" + lang.rawValue
-    let url1="https://sql-ex.ru/exercises/index.php?act=learn&Lang=" + lang.rawValue
+    let url1="https://www.sql-ex.ru/exercises/index.php?act=learn&Lang=" + lang.rawValue
+    
     NetworkService.shared.getData(url: url, params: nil, completionHandler:{_ in })
     NetworkService.shared.getData(url: url1, params: nil, completionHandler:{_ in completionHandler()})
     

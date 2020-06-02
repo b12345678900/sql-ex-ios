@@ -79,7 +79,7 @@ class NetworkService{
             catch
             {
                 
-                let htmlContent=NSString(data:data,encoding:String.Encoding.windowsCP1251.rawValue)!
+                let htmlContent=NSString(data:data,encoding:String.Encoding.utf8.rawValue)!
                 
                 completionHandler(requestResult.success(htmlContent as String))
             }

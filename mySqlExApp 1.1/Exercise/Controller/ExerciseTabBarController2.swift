@@ -78,7 +78,10 @@ class ExerciseTabBarController2:TabBarViewController
         let data=model.getData()
         for vc in ContentViewControllers
         {
-            (vc as!notifeChildControllers).setData(data: data,level: level,number: number,help: model!.help,index: 1,StrTitle: "")
+            if let vc=vc as? notifeChildControllers
+            {
+            vc.setData(data: data,level: level,number: number,help: model!.help,index: 1,StrTitle: "")
+            }
         }
         collectionView.reloadData()
     }
